@@ -31,10 +31,13 @@ function transform(src, filename, options) {
     comments: false,
     filename,
     whitelist: [
+      // Keep in sync with packager/react-packager/.babelrc
       'es6.arrowFunctions',
       'es6.blockScoping',
       'es6.classes',
+      'es6.constants',
       'es6.destructuring',
+      'es6.modules',
       'es6.parameters',
       'es6.properties.computed',
       'es6.properties.shorthand',
